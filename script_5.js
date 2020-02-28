@@ -19,14 +19,14 @@ console.log("Est-ce que tous les livres ont été au moins empruntés une fois ?
 
 compteur = 0
 for(i = 0; i < books.length; i++) {
-  if (books[i].rented === 0) {
+  if (books[i].rented != 0) {
     compteur++
   } 
 }
 if (compteur === 12) {
-  console.log("=> Non")
-} else {
   console.log("=> Oui")
+} else {
+  console.log("=> Non")
 }
 
 /////////////////////
